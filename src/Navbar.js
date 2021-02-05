@@ -1,11 +1,27 @@
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+
+const StyledUL = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: roboto;
+
+  & > li {
+    padding: 0 10px 0 0px;
+  }
+`;
+
+
 
 function Navbar() {
     return (
+        
       <nav>
+        
         <h3 className='logo'>Patrik Fredlund</h3>
-  
-        <div>
+        <StyledUL>
           <li>
             <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
               Home
@@ -32,7 +48,7 @@ function Navbar() {
               Contact
             </Link>
           </li>
-        </div>
+        </StyledUL>
       </nav>
     );
   }

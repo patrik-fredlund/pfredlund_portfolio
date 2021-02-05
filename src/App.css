@@ -8,16 +8,13 @@ body {
 .logo {
   color: whitesmoke;
   font-family: roboto;
+  
+ 
 }
-
-/* .li {
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-} */
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
