@@ -1,10 +1,11 @@
 import './App.css';
-import Contact from './Contact';
-import Projects from './Projects';
-import Home from './Home';
+import Contact from './Pages/Contact';
+import Projects from './Pages/Projects';
+import Home from './Pages/Home';
 import Navbar from './Navbar/Navbar';
+import About from './Pages/About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './About';
+
 
 function App() {
   return (

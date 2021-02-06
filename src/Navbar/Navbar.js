@@ -16,18 +16,18 @@ const StyledUL = styled.ul`
 function Navbar() {
   return (
     <>
-    <Nav>
-      <NavLink to='/'>
-        <h1>Patrik Fredlund</h1>
-      </NavLink>
-      <NavMenu>
-        <NavLink to='/home'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
-        <NavLink to='/projects'>Projects</NavLink>
-        <NavLink to='/contact'>Contact</NavLink>
-      </NavMenu>
-    </Nav>
-  </>
+      <Nav>
+        <NavLink to='/'>
+          <h2 className='logo'>Patrik Fredlund <span className='portfolio'>/Portfolio</span></h2>
+        </NavLink>
+        <NavMenu>
+          <NavLink to='/home'>Home</NavLink>
+          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/projects'>Projects</NavLink>
+          <NavLink to='/contact'>Contact</NavLink>
+        </NavMenu>
+      </Nav>
+    </>
   );
 }
 

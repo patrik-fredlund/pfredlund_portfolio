@@ -10,6 +10,15 @@ export const Nav = styled.nav`
   z-index: 10;
   padding-right: 100px;
   font-family: 'Roboto';
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #00141a;
+  }
+  & .portfolio {
+font-weight: 100; 
+font-style: italic;
+ }
 `;
 
 export const NavLink = styled(Link)`
@@ -22,14 +31,31 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 
   &.active {
-    color: #15cdfc;
+    color: #00ccff;
   }
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #00141a;
+    color: #00ccff;
+  }
+
+  & .logo {
+      letter-spacing: 2px;
+    
+  }
+
 `;
 
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
+  
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
 `;
 export const NavBtn = styled.nav`
   display: flex;
@@ -50,6 +76,6 @@ export const NavBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #00ccff;
   }
 `;
