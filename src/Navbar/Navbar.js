@@ -18,9 +18,11 @@ function Navbar() {
     <>
       <Nav>
         <NavLink to='/'>
+          <div className='logoContainer'>
           <h2 className='logo'>
             Patrik Fredlund <span className='portfolio'>/Portfolio</span>
           </h2>
+          </div>
         </NavLink>
         <Bars />
         <NavMenu>

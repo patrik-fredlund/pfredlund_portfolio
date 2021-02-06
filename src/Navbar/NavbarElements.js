@@ -12,11 +12,19 @@ export const Nav = styled.nav`
   padding-right: 100px;
   font-family: 'Roboto';
 
-  &:hover {
+  /* &:hover {
     transition: all 0.2s ease-in-out;
-    background: #00141a;
+    background: #00141a; */
   }
+  & .logoContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+  }
+
   & .portfolio {
+    display: flex;
     font-weight: 100;
     font-style: italic;
   }
@@ -43,6 +51,7 @@ export const NavLink = styled(Link)`
 
   & .logo {
     letter-spacing: 2px;
+    padding-left: 90px;
   }
 `;
 
@@ -70,25 +79,26 @@ export const NavMenu = styled.div`
     display: none;
   }
 `;
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-`;
-export const NavBtnLink = styled(Link)`
-  border-radius: 4px;
-  background: #256ce1;
-  padding: 10px 22px;
-  color: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+// export const NavBtn = styled.nav`
+//   display: flex;
+//   align-items: center;
+//   margin-right: 24px;
+// `;
 
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #00ccff;
-  }
-`;
+// export const NavBtnLink = styled(Link)`
+//   border-radius: 4px;
+//   background: #256ce1;
+//   padding: 10px 22px;
+//   color: #fff;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   text-decoration: none;
+
+//   &:hover {
+//     transition: all 0.2s ease-in-out;
+//     background: #fff;
+//     color: #00ccff;
+//   }
+// `;
