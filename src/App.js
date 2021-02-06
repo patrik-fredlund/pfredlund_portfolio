@@ -1,15 +1,14 @@
 import './App.css';
-import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
 import Home from './Home';
-import Navbar from './Navbar';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Navbar from './Navbar/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import About from './About';
 
 function App() {
   return (
-    <div>
-      <Router>
+    <Router>
       <Navbar />
       <Switch>
         <Route path='/about'>
@@ -26,10 +25,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-    </div>
-  )
- 
-  
+  );
 }
 
 export default App;
