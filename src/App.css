@@ -38,3 +38,21 @@ body {
   /* background-color: #212229; */
   padding: 100px;
 }
+
+.profileImage {
+  width: 80%;
+  /* height:80% ; */
+  margin: auto;
+  position: absolute;
+  top: 1vh;
+  /* padding: 1%; */
+  left: 20%;
+  bottom: -14%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1;
+}
