@@ -41,8 +41,9 @@ export const NavLink = styled(Link)`
   }
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: #00141a;
+    border-radius: 50px;
     color: #00ccff;
   }
 

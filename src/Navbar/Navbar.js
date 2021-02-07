@@ -13,7 +13,9 @@ function Navbar({ toggle }) {
         </NavLink>
         <Bars onClick={toggle} />
         <NavMenu>
-          <NavLink to='/'>Home</NavLink>
+          <NavLink exact to='/'>
+            Home
+          </NavLink>
           <NavLink to='/about'>About</NavLink>
           <NavLink to='/projects'>Projects</NavLink>
           <NavLink to='/contact'>Contact</NavLink>
