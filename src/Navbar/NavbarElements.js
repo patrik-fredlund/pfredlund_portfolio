@@ -12,9 +12,7 @@ export const Nav = styled.nav`
   padding-right: 100px;
   font-family: 'Roboto';
 
-  /* &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #00141a; */
+
   }
   & .logoContainer {
     display: flex;
@@ -27,8 +25,10 @@ export const Nav = styled.nav`
     display: flex;
     font-weight: 100;
     font-style: italic;
-  }
+  
 `;
+
+
 
 export const NavLink = styled(Link)`
   color: #fff;
