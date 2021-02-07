@@ -11,18 +11,16 @@ const ProjectWrapper = styled.div`
 `;
 
 const ProjectContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   /* margin-left: 100px; */
 `;
 
 const ProjectsStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   background-color: white;
-  max-width: 1200px;
+  max-width: 900px;
 `;
 
 const StyledCard = styled.div`
@@ -33,7 +31,10 @@ const StyledCard = styled.div`
   margin: 10px 10px 10px 10px;
   min-width: 300px;
 `;
+const StyledSizeFix = styled.div`
+max-width: 1050px;
 
+`
 function Projects() {
 
 
@@ -46,8 +47,7 @@ function Projects() {
   }, []);
 
   return (
-    <ProjectWrapper>
-      
+    <ProjectWrapper> 
       <ProjectContainer>
         <h1>Projects!</h1>
         <div className='profileImage' />

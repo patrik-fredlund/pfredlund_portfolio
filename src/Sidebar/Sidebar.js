@@ -15,19 +15,21 @@ const Sidebar = ({ isOpen, toggle }) => {
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
+
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>
-            About
-          </SidebarLink>
-          <SidebarLink to='projects' onClick={toggle}>
-            Projects
-          </SidebarLink>
-          <SidebarLink to='home' onClick={toggle}>
+          <SidebarLink to='/' onClick={toggle}>
             Home
           </SidebarLink>
-          <SidebarLink to='contact' onClick={toggle}>
+          <SidebarLink to='/about' onClick={toggle}>
+            About
+          </SidebarLink>
+          <SidebarLink to='/projects' onClick={toggle}>
+            Projects
+          </SidebarLink>
+          <SidebarLink to='/contact' onClick={toggle}>
             Contact
           </SidebarLink>
+
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

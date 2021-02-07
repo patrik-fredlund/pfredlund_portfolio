@@ -24,17 +24,15 @@ const App = () => {
       <Navbar toggle={toggle}/>
       <Sidebar  isOpen={isOpen} toggle={toggle} />
       <Switch>
+        
         <Route path='/about'>
           <About />
-       
         </Route>
         <Route path='/projects'>
             <Projects className='profileImage' />
         </Route>
         <Route path='/contact'>
           <Contact />
-
-         
         </Route>
         <Route path='/'>
           <Home />
