@@ -1,6 +1,7 @@
 function Contact() {
   return (
     <div className='heroContainer'>
+     <div className='profileImage' />
     <h1 className='title'>Contact</h1>
     <p className='text'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, non sed

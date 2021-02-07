@@ -1,10 +1,8 @@
-import styled from 'styled-components';
-
-
 
 function About() {
   return (
     <div className='heroContainer'>
+    <div className='profileImage' />
       <h1 className='title'>About</h1>
       <p className='text'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, non sed
