@@ -2,15 +2,12 @@ import './App.css';
 import Contact from './Pages/Contact';
 import Projects from './Pages/Projects';
 import Home from './Pages/Home';
-import Navbar from './Navbar/Navbar';
 import About from './Pages/About';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ProfileImage from './putte.jpg';
+import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
-import styled from 'styled-components';
-import { useState } from 'react'
-
-
+import ProfileImage from './putte.jpg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useState } from 'react';
 
 const App = () => {
   const [isOpen, SetIsOpen] = useState(false);
@@ -21,21 +18,56 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar toggle={toggle}/>
-      <Sidebar  isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Switch>
-        
         <Route path='/about'>
           <About />
+          <>
+            {
+              <img
+                src={ProfileImage}
+                className='profileImage'
+                alt='Patrik profile'
+              />
+            }
+          </>
         </Route>
         <Route path='/projects'>
-            <Projects className='profileImage' />
+          <Projects />
+          <>
+            {
+              <img
+                src={ProfileImage}
+                className='profileImage'
+                alt='Patrik profile'
+              />
+            }
+          </>
         </Route>
         <Route path='/contact'>
           <Contact />
+          <>
+            {
+              <img
+                src={ProfileImage}
+                className='profileImage'
+                alt='Patrik profile'
+              />
+            }
+          </>
         </Route>
         <Route path='/'>
           <Home />
+          <>
+            {
+              <img
+                src={ProfileImage}
+                className='profileImage'
+                alt='Patrik profile'
+              />
+            }
+          </>
         </Route>
       </Switch>
     </Router>

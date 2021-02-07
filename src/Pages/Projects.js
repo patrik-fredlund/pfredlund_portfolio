@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
-import Navbar from '../Navbar/Navbar';
-import Sidebar from '../Sidebar/Sidebar';
-import ProfileImage from '../putte.jpg';
 
 const ProjectWrapper = styled.div`
   display: flex;
@@ -11,33 +8,55 @@ const ProjectWrapper = styled.div`
 `;
 
 const ProjectContainer = styled.div`
+  margin-left: 100px;
 
-  /* margin-left: 100px; */
+  
+
+  @media screen and (max-width: 480px) {
+    margin-left: 0;
+    & >h1 {
+    margin-left: 100px;
+
+  }
+  }
+
+ 
 `;
 
 const ProjectsStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: white;
+  /* justify-content: space-around; */
+  /* background-color: green; */
   max-width: 900px;
+  @media screen and (max-width: 480px) {
+      justify-content: space-around;
+
+  }
 `;
+
 
 const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   background-color: lightgray;
-  padding: 0px 5px;
-  margin: 10px 10px 10px 10px;
+  padding: 10px 5px;
+  margin: 5px 10px 5px 0;
+  /* margin-right:130px; */
   min-width: 300px;
+  border-radius: 5px;
+
+& .repo-name {
+  margin-left:10px;
+  
+}
+
 `;
-const StyledSizeFix = styled.div`
-max-width: 1050px;
-
-`
-function Projects() {
 
 
+
+
+const Projects = () => {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
@@ -47,14 +66,14 @@ function Projects() {
   }, []);
 
   return (
-    <ProjectWrapper> 
+    <ProjectWrapper>
       <ProjectContainer>
-        <h1>Projects!</h1>
-        <div className='profileImage' />
+        <h1>Projects</h1>
+    
         <ProjectsStyle>
           {repos.map((repo) => (
             <StyledCard>
-              <h2 key={repo.id}>{repo.name}</h2>
+              <h2 className='repo-name' key={repo.id}>{repo.name}</h2>
               <p>{repo.description}</p>
               <a href={repo.html_url}>Github</a>
             </StyledCard>
