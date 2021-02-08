@@ -1,18 +1,19 @@
-import Footer from "../Footer";
+import Footer from './Footer';
 
 function Contact() {
   return (
-    <div className='heroContainer'>
-     <div className='profileImage' />
-    <h1 className='title'>Contact</h1>
-    <p className='text'>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, non sed
-      in reprehenderit voluptates neque ipsa corrupti nam similique esse iure
-      eligendi cupiditate! Est hic accusantium dolorem nihil eos soluta.
-    </p>
-    <Footer />
-  </div>
-  )
+    <div className='homeContainer'>
+      <div className='profileImage' />
+      <h1 className='hello'>Contact</h1>
+      <hr className='line'></hr>
+      <h2 className='welcome'>For any inquiries feel free to contact me at:</h2>
+      <a href='mailto:patrikfredlunds@gmail.com' className='email'>
+        patrikfredlunds@gmail.com
+      </a>
+
+      <Footer />
+    </div>
+  );
 }
 
 export default Contact;

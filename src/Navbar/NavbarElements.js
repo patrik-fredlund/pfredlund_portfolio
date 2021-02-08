@@ -1,25 +1,27 @@
+
+/* --------------------------------------------------------- */
+//NavbarElements - styling till samtliga element i navbaren. 
+/* --------------------------------------------------------- */
+
+
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
+
+//Hela Navbaren
 export const Nav = styled.nav`
-  background: #000;
   height: 80px;
   display: flex;
   justify-content: space-between;
-  /* padding: 0.5rem calc((1vw - 1000px) / 2); */
-  z-index: 10;
   padding-right: 100px;
-  font-family: 'Roboto'
   
 ;
-  
-
-
+// Container med "logo" Patrik Fredlund och /Portfolio
   }
   & .logoContainer {
     margin-left: 70px;
-    margin-top:4px
+    margin-top:8px
 
 
   }
@@ -29,6 +31,17 @@ export const Nav = styled.nav`
     font-weight: 100;
     font-style: italic;
   
+`;
+
+//Navigeringsmenyn till höger 
+export const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -50,13 +63,10 @@ export const NavLink = styled(Link)`
     border-radius: 50px;
     color: #00ccff;
   }
-
-  & .logo {
-    letter-spacing: 2px;
-    padding-left: 90px;
-  }
 `;
 
+
+//Hamburger Menu
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
@@ -72,12 +82,4 @@ export const Bars = styled(FaBars)`
   }
 `;
 
-export const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: -24px;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;

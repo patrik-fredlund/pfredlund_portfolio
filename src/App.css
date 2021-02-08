@@ -1,3 +1,12 @@
+/* --------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+
+
+/* --------------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,900&display=swap');
 
 :root {
@@ -28,15 +37,7 @@ body {
   max-width: 700px;
 }
 
-/* .portfolio {
-  font-weight: 100;
-  font-style: italic;
-  color: aliceblue;
-} */
-
 .profileImage {
-  /* background: url(./putte.jpg); */
-  /* width: 80%; */
   height: 80%;
   margin: auto;
   position: absolute;
@@ -167,8 +168,7 @@ body {
   padding-top: 15px;
   padding: 0 10px 0 10px;
 }
-
-a:hover {
+.footerLink:hover {
   transition: all 0.2s ease-in-out;
   background: #00141a;
   border-radius: 50px;
@@ -192,10 +192,20 @@ a:hover {
 @media screen and (max-width: 480px) {
   .visit {
     padding-right: 0;
-
   }
 }
 
-/* .rootContainer {
-  background-color: aquamarine;
-} */
+.email {
+  padding-left: 100px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: -50px;
+  font-style: italic;
+  min-width: 250px;
+}
+
+.email:hover {
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+  color: var(--main-font-color);
+}

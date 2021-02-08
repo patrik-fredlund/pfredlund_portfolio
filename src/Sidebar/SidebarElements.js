@@ -1,3 +1,15 @@
+/* --------------------------------------------------------- */
+//SidebarElements - styling till samtliga element i sidebaren. 
+/* --------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------- */
+
+//Jag har använt mig av styled components i detta fall, precis som i NavbarElements. Vad gäller stylingen i helhet på sidan så har jag även använt vanlig css i App.css. Vid nästa update av sidan kommer jag endast använda styled components i separata filer till varje component. För en tyldligare struktur.
+/* --------------------------------------------------------- */
+
+
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
@@ -15,12 +27,14 @@ export const SidebarContainer = styled.aside`
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-  /* top:0; */
 `;
+
+//krysset som stänger sidebaren
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
+//Hamburger-symbolen
 export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
@@ -30,10 +44,8 @@ export const Icon = styled.div`
   cursor: pointer;
   outline: none;
 `;
-export const SidebarWrapper = styled.div`
-  color: #fff;
-`;
 
+// En container som håller ihop länkarna i menyn. Första gången jag använder mig av grid. Något jag velat testa på tidgare. Kommer använda det mer i framtiden. Ett mer användbart system än t.ex flex.
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
@@ -44,7 +56,7 @@ export const SidebarMenu = styled.ul`
     grid-template-rows: repeat(6, 60px);
   }
 `;
-
+//Länkarna till sidorna.
 export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;

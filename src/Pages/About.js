@@ -1,12 +1,12 @@
-import Footer from "../Footer";
+import Footer from "./Footer";
 
 
-function Home() {
+function About() {
 
   return (
 
     (
-      // <div className='rootContainer'>
+      
       <div className='homeContainer'>
        <div className='profileImage' />
         <h1 className='hello'>About me</h1>
@@ -19,9 +19,9 @@ function Home() {
         </p>
         <Footer />
       </div>
-      // </div>
+      
     )
   );
 }
 
-export default Home;
+export default About;
