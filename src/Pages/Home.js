@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 
 
 function Home() {
@@ -5,6 +6,7 @@ function Home() {
   return (
 
     (
+      // <div className='rootContainer'>
       <div className='homeContainer'>
        <div className='profileImage' />
         <h1 className='hello'>Hi There!</h1>
@@ -16,7 +18,9 @@ function Home() {
           love my wife, my guitar, typography, beautiful words and dogs.
           <br></br> In that exact order.
         </p>
+        <Footer />
       </div>
+      // </div>
     )
   );
 }

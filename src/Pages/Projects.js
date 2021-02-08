@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
+import Footer from '../Footer';
 
 const ProjectWrapper = styled.div`
   display: flex;
@@ -66,6 +67,7 @@ const Projects = () => {
   }, []);
 
   return (
+    <div>
     <ProjectWrapper>
       <ProjectContainer>
         <h1>Projects</h1>
@@ -81,6 +83,8 @@ const Projects = () => {
         </ProjectsStyle>
       </ProjectContainer>
     </ProjectWrapper>
+    
+    </div>
   );
 }
 export default Projects;

@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((1vw - 1000px) / 2);
+  /* padding: 0.5rem calc((1vw - 1000px) / 2); */
   z-index: 10;
   padding-right: 100px;
   font-family: 'Roboto';
@@ -15,8 +15,8 @@ export const Nav = styled.nav`
 
   }
   & .logoContainer {
-    
-    padding-top: 30px;
+    margin-left: 70px;
+
 
   }
 
@@ -41,7 +41,7 @@ export const NavLink = styled(Link)`
   }
 
   &:hover {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: #00141a;
     border-radius: 50px;
     color: #00ccff;

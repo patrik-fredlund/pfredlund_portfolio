@@ -1,3 +1,5 @@
+import Footer from "../Footer";
+
 function Contact() {
   return (
     <div className='heroContainer'>
@@ -8,6 +10,7 @@ function Contact() {
       in reprehenderit voluptates neque ipsa corrupti nam similique esse iure
       eligendi cupiditate! Est hic accusantium dolorem nihil eos soluta.
     </p>
+    <Footer />
   </div>
   )
 }

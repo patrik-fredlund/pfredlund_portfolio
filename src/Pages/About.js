@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 
 function About() {
   return (
@@ -9,6 +10,7 @@ function About() {
         in reprehenderit voluptates neque ipsa corrupti nam similique esse iure
         eligendi cupiditate! Est hic accusantium dolorem nihil eos soluta.
       </p>
+      <Footer />
     </div>
   );
 }

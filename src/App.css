@@ -34,15 +34,10 @@ body {
   color: aliceblue;
 } */
 
-.heroContainer {
-  /* background-color: #212229; */
-  padding: 100px;
-}
-
 .profileImage {
   /* background: url(./putte.jpg); */
   /* width: 80%; */
-  height: 80% ;
+  height: 80%;
   margin: auto;
   position: absolute;
   top: 1px;
@@ -56,7 +51,6 @@ body {
   z-index: -1;
 }
 
-
 @media screen and (max-width: 480px) {
   .profileImage {
     /* width: 60px; */
@@ -64,19 +58,20 @@ body {
   }
 }
 
-
 .homeContainer {
   /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  margin-right: 300px;
+  margin-left: -30px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   .homeContainer {
     margin-right: 100px;
   }
 }
-
 
 .hello {
   /* border: 1px solid lightblue; */
@@ -84,19 +79,21 @@ body {
   display: flex;
   font-size: 7rem;
   padding-left: 100px;
-  }
+}
 
-  @media screen and (max-width: 480px) {
-    .hello {
-      font-size: 5rem;
-      line-height: 80px;
-    }
+@media screen and (max-width: 480px) {
+  .hello {
+    font-size: 5rem;
+    line-height: 80px;
+    padding-left: 100px;
   }
+}
 
 .line {
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.084);
   width: 50vw;
+  max-width: 800px;
   margin-top: -60px;
   margin-left: 100px;
 }
@@ -114,12 +111,84 @@ body {
   padding-top: 5px;
   padding-bottom: -50px;
   font-style: italic;
+  min-width: 250px;
 }
 
 .info {
   padding-left: 100px;
   padding-top: -200px;
   max-width: 500px;
+  min-width: 350px;
   font-weight: 300;
   line-height: 25px;
 }
+
+@media screen and (max-width: 480px) {
+  .info {
+    min-width: 250px;
+    font-size: 0.8rem;
+  }
+}
+
+.footer {
+  margin-top: 6rem;
+  padding: 1rem;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: 0.1rem;
+    margin-right: 10px;
+  }
+}
+
+.footerContainer {
+  position: absolute;
+  margin-left: 80px;
+  padding-bottom: 10px;
+  min-width: none;
+}
+
+@media screen and (max-width: 480px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+.footerLink {
+  display: inline;
+  text-decoration: none;
+  padding-top: 15px;
+  padding: 0 10px 0 10px;
+
+}
+
+@media screen and (max-width: 480px) {
+  .footerLink {
+    display: flex;
+    padding: 5px 0 0 0;
+  }
+}
+
+.visit {
+  font-weight: 100;
+  font-size: 0.8rem;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .visit {
+    padding-right: 0;
+  }
+}
+
+/* .rootContainer {
+  background-color: aquamarine;
+} */

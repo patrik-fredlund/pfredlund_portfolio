@@ -3,13 +3,15 @@ import { Nav, NavLink, Bars, NavMenu } from './NavbarElements';
 function Navbar({ toggle }) {
   return (
     <>
+    
       <Nav>
-        <NavLink to='/'>
-          <div className='logoContainer'>
+      <div className='logoContainer'>
             <h2 className='logo'>
               Patrik Fredlund <span className='portfolio'>/Portfolio</span>
             </h2>
           </div>
+        <NavLink to='/'>
+          
         </NavLink>
         <Bars onClick={toggle} />
         <NavMenu>
