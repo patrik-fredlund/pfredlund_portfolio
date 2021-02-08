@@ -10,12 +10,16 @@ export const Nav = styled.nav`
   /* padding: 0.5rem calc((1vw - 1000px) / 2); */
   z-index: 10;
   padding-right: 100px;
-  font-family: 'Roboto';
+  font-family: 'Roboto'
+  
+;
+  
 
 
   }
   & .logoContainer {
     margin-left: 70px;
+    margin-top:4px
 
 
   }
