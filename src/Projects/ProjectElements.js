@@ -4,12 +4,10 @@ export const ProjectWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: orange;; */
 `;
 
 export const ProjectContainer = styled.div`
   margin-left: 70px;
-  /* background-color: green;; */
 
   @media screen and (max-width: 480px) {
     margin-left: 0;
@@ -23,7 +21,6 @@ export const ProjectsStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
-  /* background-color: red;; */
 
   @media screen and (max-width: 480px) {
     justify-content: space-around;

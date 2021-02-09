@@ -3,8 +3,6 @@ import Footer from '../Pages/Footer';
 import {ProjectContainer, ProjectWrapper, ProjectsStyle, StyledCardContainer} from './ProjectElements'
 
 
-
-
 const Projects = () => {
   const [repos, setRepos] = useState([]);
 
