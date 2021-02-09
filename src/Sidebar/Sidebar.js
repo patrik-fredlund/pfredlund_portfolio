@@ -3,7 +3,6 @@ import {
   SidebarContainer,
   Icon,
   CloseIcon,
-  SidebarWrapper,
   SidebarMenu,
   SidebarLink,
 } from './SidebarElements';
