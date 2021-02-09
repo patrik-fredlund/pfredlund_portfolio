@@ -6,7 +6,6 @@ function Home() {
   return (
 
     (
-      // <div className='rootContainer'>
       <div className='homeContainer'>
        <div className='profileImage' />
         <h1 className='hello'>Hi There!</h1>
@@ -20,7 +19,6 @@ function Home() {
         </p>
         <Footer />
       </div>
-      // </div>
     )
   );
 }
