@@ -14,8 +14,7 @@ function Home() {
         <p className='info'>
           My name is Patrik, but you can call me Putte.<br></br>I am a
           songwriting graphic designer turned frontend developer.<br></br> I
-          love my wife, my guitar, typography, beautiful words and straplines.
-          In that exact order.
+          love my wife, my guitar, typography, beautiful words and<br></br> chicken tikka masala. In that exact order.
         </p>
         <Footer />
       </div>
