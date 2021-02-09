@@ -12,10 +12,10 @@ function Home() {
         <hr className='line'></hr>
         <h2 className='welcome'>Welcome to my Portfolio Coolio!</h2>
         <p className='info'>
-          My name is Patrik, but you can call me Putte.<br></br>I am an
+          My name is Patrik, but you can call me Putte.<br></br>I am a
           songwriting graphic designer turned frontend developer.<br></br> I
-          love my wife, my guitar, typography, beautiful words and straplines.
-          <br></br> In that exact order.
+          love my wife, my guitar, typography, beautiful words, straplines and chicken tikka masala with garlic nan.
+          In that exact order.
         </p>
         <Footer />
       </div>

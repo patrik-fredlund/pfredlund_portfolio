@@ -21,7 +21,7 @@ export const Nav = styled.nav`
   }
   & .logoContainer {
     margin-left: 70px;
-    margin-top:8px
+    margin-top:30px
 
 
   }

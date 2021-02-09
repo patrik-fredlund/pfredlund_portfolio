@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
-import ProfileImage from './putte.webp';
+import ProfileImage from './putte.jpg';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState } from 'react';
 
