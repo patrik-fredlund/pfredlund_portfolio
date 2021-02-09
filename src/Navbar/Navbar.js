@@ -5,11 +5,13 @@ function Navbar({ toggle }) {
     <>
     
       <Nav>
+      <NavLink to='/home'>
       <div className='logoContainer'>
             <h2 className='logo'>
               Patrik Fredlund <span className='portfolio'>/Portfolio</span>
             </h2>
           </div>
+          </NavLink>
         <NavLink to='/'>
           
         </NavLink>
