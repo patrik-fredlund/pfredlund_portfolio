@@ -1,8 +1,8 @@
-import Footer from "./Footer";
+import Footer from '../Footer';
 
-function Contact() {
+const Contact = () => {
   return (
-    <div className='homeContainer'>
+    <div className='mainContainer'>
       <div className='profileImage' />
       <h1 className='hello'>Contact</h1>
       <hr className='line'></hr>
@@ -14,6 +14,6 @@ function Contact() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Contact;

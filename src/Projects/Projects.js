@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
-import Footer from '../Pages/Footer';
-import {ProjectContainer, ProjectWrapper, ProjectsStyle, StyledCardContainer} from './ProjectElements'
-
+import Footer from '../Footer';
+import {
+  ProjectContainer,
+  ProjectWrapper,
+  ProjectsStyle,
+  StyledCardContainer,
+} from './ProjectElements';
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
@@ -14,24 +18,23 @@ const Projects = () => {
 
   return (
     <div>
-    <ProjectWrapper>
-      <ProjectContainer>
-        <h1>Projects</h1>
-    
-        <ProjectsStyle>
-          {repos.map((repo) => (
-            <StyledCardContainer>
-              <h2 key={repo.id}>{repo.name}</h2>
-              <p>{repo.description}</p>
-              <a href={repo.html_url}>Github</a>
-            </StyledCardContainer>
-          ))}
-        </ProjectsStyle>
-      </ProjectContainer>
-    </ProjectWrapper>
-    <Footer />
+      <ProjectWrapper>
+        <ProjectContainer>
+          <h1>Projects</h1>
 
+          <ProjectsStyle>
+            {repos.map((repo) => (
+              <StyledCardContainer>
+                <h2 key={repo.id}>{repo.name}</h2>
+                <p>{repo.description}</p>
+                <a href={repo.html_url}>Github</a>
+              </StyledCardContainer>
+            ))}
+          </ProjectsStyle>
+        </ProjectContainer>
+      </ProjectWrapper>
+      <Footer />
     </div>
   );
-}
+};
 export default Projects;

@@ -1,6 +1,6 @@
 import { Nav, NavLink, Bars, NavMenu } from './NavbarElements';
 
-function Navbar({ toggle }) {
+const Navbar = ({ toggle }) => {
   return (
     <>
     
