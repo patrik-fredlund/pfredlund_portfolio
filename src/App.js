@@ -1,3 +1,17 @@
+
+/* 
+Hej och välkommen till min sida!
+Ha en trevlig dag!
+/Putte
+
+Link to repo: https://github.com/patrik-fredlund/pfredlund_portfolio
+Link to surge: https://pfredlund_portfolio.surge.sh/
+
+*/
+
+
+
+
 import './App.css';
 import Contact from './Pages/Contact';
 import Projects from './Projects/Projects';
