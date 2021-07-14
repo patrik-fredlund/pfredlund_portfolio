@@ -1,11 +1,14 @@
 /* --------------------------------------------------------- */
-//SidebarElements - styling till samtliga element i sidebaren.
+//SidebarElements - styling till samtliga element i sidebaren. 
 /* --------------------------------------------------------- */
+
+
 
 /* --------------------------------------------------------- */
 
 //Jag har använt mig av styled components i detta fall, precis som i NavbarElements. Vad gäller stylingen i helhet på sidan så har jag även använt vanlig css i App.css. Vid nästa update av sidan kommer jag endast använda styled components i separata filer till varje component. För en tyldligare struktur.
 /* --------------------------------------------------------- */
+
 
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-router-dom';
@@ -67,9 +70,9 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   @media screen and (max-width: 480px) {
-    margin-right: 140px;
-    margin-bottom: 100px;
+    margin-right: 30px;
   }
+
   &:hover {
     color: #00ccff;
     transition: 0.2s ease-in-out;
