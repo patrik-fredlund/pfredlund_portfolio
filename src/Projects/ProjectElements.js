@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-// fixa highlight hovcer
-
 export const ProjectPickWrapper = styled.div`
   padding: 5px;
   max-width: 1100px;
